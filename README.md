@@ -10,7 +10,7 @@ To accommodate diverse needs, Copilot allows developers to insert marker tags in
 * `copilot:all` showcases all the different kinds of content in one go.
 * `copilot:summary` expands to a one-paragraph summary of the changes in the pull request.
 * `copilot:walkthrough` expands to a detailed list of changes, including links to the relevant pieces of code.
-* `copilot:poem expands` to a poem about the changes in the pull request.
+* `copilot:poem` expands to a poem about the changes in the pull request.
 
 https://github.com/somhin/synapse/assets/67181278/4f48858d-1315-4ec3-bc88-79b17cb95019
 
