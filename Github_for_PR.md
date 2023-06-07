@@ -34,7 +34,7 @@ https://github.com/somhin/synapse/assets/67181278/32fab555-0dac-4eae-aaee-38ea88
 
 ## Reviewing pull-requests with AI
 - Code review and preparing pull requests (PRs) for review consume a significant amount of developer time. :dizzy_face:	
-- Reviewving pull-requests AI-powered solution aims to assist in this process and reduce time spent.
+- Reviewing pull-requests AI-powered solution aims to assist in this process and reduce time spent.
 - The AI accurately describes the changes in a pull request and performs code review.
 - Actionable suggestions for improvement are provided by the AI, which can be easily accepted with a click.
 - While human reviewers won't be replaced, the AI helps streamline the review cycle.
