@@ -1,0 +1,39 @@
+import requests
+
+# Set up your Spotify API credentials
+client_id = 'your_client_id'
+client_secret = 'your_client_secret'
+
+# Obtain an access token
+auth_url = 'https://accounts.spotify.com/api/token'
+auth_response = requests.post(auth_url, {
+    'grant_type': 'client_credentials',
+    'client_id': client_id,
+    'client_secret': client_secret,
+})
+
+auth_data = auth_response.json()
+access_token = auth_data['access_token']
+
+# Set up the headers for subsequent API requests
+headers = {
+    'Authorization': 'Bearer ' + access_token,
+}
+
+# Set the query parameters for the search request
+query = 'shows'  # For example, 'podcasts' or specific podcast name
+year = '2023'  # Year filter
+location = 'New York'  # Location filter
+
+# Construct the search query URL with the specified parameters
+search_url = f'https://api.spotify.com/v1/search?q={query}&type=show&limit=10&year:{year}&q=location:{location}'
+
+# Send the search request
+search_response = requests.get(search_url, headers=headers)
+search_data = search_response.json()
+
+# Process the show results
+for show in search_data['shows']['items']:
+    print(show['name'])
+    print(show['description'])
+    print('---')
